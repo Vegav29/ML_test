@@ -1,4 +1,4 @@
-# Natural Language Processing (NLP) Projects
+# Natural Language Processing (NLP)
 
 This repository showcases various NLP-based projects demonstrating techniques such as Bag-of-Words (BoW), TF-IDF, embeddings (GloVe and Word2Vec), sentiment analysis, summarization, and evaluation metrics (ROUGE, BLEU).
 
@@ -22,6 +22,8 @@ This repository showcases various NLP-based projects demonstrating techniques su
 ```python
 bow_array, bow_features = bow_representation(corpus)
 tfidf_array, tfidf_features = tfidf_representation(corpus)
+![image](https://github.com/user-attachments/assets/1412beca-912b-443f-a097-ecd614076361)
+
 ```
 
 ---
@@ -72,6 +74,7 @@ df['Prompt_Sentiment'] = analyze_sentiments(df['Prompt'].tolist())
 df['Response_Sentiment'] = analyze_sentiments(df['Response'].tolist())
 df.to_csv("sentiment_analysis_results_separate.csv", index=False)
 ```
+![image](https://github.com/user-attachments/assets/ea1f5fb1-572b-4e50-b45a-1aadef60e29b)
 
 ---
 
@@ -101,6 +104,8 @@ rouge_scores = compute_rouge(generated_summaries, reference_summaries)
 bleu_scores = compute_bleu(generated_summaries, reference_summaries)
 print(f"ROUGE-1 F1: {rouge1:.4f}, BLEU: {mean_bleu:.4f}")
 ```
+![image](https://github.com/user-attachments/assets/423bbb6e-52b7-48c1-9a8d-eb283d498072)
+
 
 ---
 
@@ -134,24 +139,7 @@ pip install numpy pandas transformers torch nltk rouge-score datasets gensim
 
 ---
 
-## **Results**
 
-### **Sample Outputs:**
-- **Sentiment Analysis:**
-   | Dialogue              | Sentiment |
-   |-----------------------|-----------|
-   | I love this product   | Positive  |
-   | I hate this product   | Negative  |
-
-- **ROUGE and BLEU Scores (Summarization):**
-   ```
-   ROUGE-1 F1 Score: 0.5241
-   ROUGE-2 F1 Score: 0.3782
-   ROUGE-L F1 Score: 0.4913
-   BLEU Score: 0.3021
-   ```
-
----
 
 ## **License**
 This project is licensed under the MIT License. Feel free to use and extend it!
