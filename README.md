@@ -4,7 +4,7 @@ This repository showcases various NLP-based projects demonstrating techniques su
 
 ---
 
-## **1. Bag-of-Words (BoW) and TF-IDF Representation**
+## **1. Bag-of-Words (BoW) and TF-IDF Representation,Embeddings: GloVe and Word2Vec****
 
 ### **Objective:**
 - Represent textual data as numerical vectors using Bag-of-Words and TF-IDF techniques.
@@ -12,45 +12,18 @@ This repository showcases various NLP-based projects demonstrating techniques su
 ### **Implementation:**
 - BoW: Uses `CountVectorizer` to convert text into word frequency counts.
 - TF-IDF: Uses `TfidfVectorizer` to compute term importance based on frequency and inverse document frequency.
+- GloVe: Load pre-trained embeddings using `gensim` (glove-wiki-gigaword-100).
+- Word2Vec: Train embeddings using Word2Vec on a custom corpus.
 
 ### **Steps:**
 1. Tokenize and vectorize the corpus using BoW.
 2. Calculate term weights using TF-IDF.
 3. Display the resulting numerical representations and feature names.
 
-### **Code Snippet:**
-```python
-bow_array, bow_features = bow_representation(corpus)
-tfidf_array, tfidf_features = tfidf_representation(corpus)
 ![image](https://github.com/user-attachments/assets/1412beca-912b-443f-a097-ecd614076361)
 
-```
-![image](https://github.com/user-attachments/assets/1412beca-912b-443f-a097-ecd614076361)
----
 
-## **2. Embeddings: GloVe and Word2Vec**
 
-### **Objective:**
-- Represent words as dense vectors using pre-trained embeddings (GloVe) and Word2Vec.
-
-### **Implementation:**
-- **GloVe:** Load pre-trained embeddings using `gensim` (glove-wiki-gigaword-100).
-- **Word2Vec:** Train embeddings using Word2Vec on a custom corpus.
-
-### **Steps:**
-1. Load pre-trained GloVe embeddings.
-2. Train Word2Vec embeddings on the input corpus.
-3. Retrieve word vectors for comparison.
-
-### **Code Snippet:**
-```python
-glove_model = load_glove_embeddings()
-word2vec_model = train_word2vec(corpus)
-print(glove_model['product'])  # GloVe vector
-print(word2vec_model.wv['product'])  # Word2Vec vector
-```
-
----
 
 ## **3. Sentiment Analysis on Custom Dataset**
 
