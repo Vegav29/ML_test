@@ -25,7 +25,7 @@ This repository showcases various NLP-based projects demonstrating techniques su
 
 
 
-## **3. Sentiment Analysis on Custom Dataset**
+## **2. Sentiment Analysis on Custom Dataset**
 
 ### **Objective:**
 - Perform sentiment analysis on dialogues from the **Her-The-Movie** dataset.
@@ -51,7 +51,7 @@ df.to_csv("sentiment_analysis_results_separate.csv", index=False)
 
 ---
 
-## **4. Text Summarization and Evaluation**
+## **3. Text Summarization and Evaluation**
 
 ### **Objective:**
 - Generate summaries for articles using Transformer-based models and evaluate them using ROUGE and BLEU metrics.
