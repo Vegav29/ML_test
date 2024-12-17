@@ -25,7 +25,7 @@ tfidf_array, tfidf_features = tfidf_representation(corpus)
 ![image](https://github.com/user-attachments/assets/1412beca-912b-443f-a097-ecd614076361)
 
 ```
-
+![image](https://github.com/user-attachments/assets/1412beca-912b-443f-a097-ecd614076361)
 ---
 
 ## **2. Embeddings: GloVe and Word2Vec**
